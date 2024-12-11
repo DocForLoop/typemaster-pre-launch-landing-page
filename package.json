@@ -1,0 +1,14 @@
+{
+  "name": "typemaster-pre-launch-landing-page",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Typemaster pre-launch landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/typemaster-prelaunch-landing-page-J6-Yj5J-X). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "gulpfile.js",
+  "author": "DocForLoop",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.82.0"
+  }
+}
