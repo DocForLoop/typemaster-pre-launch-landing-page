@@ -1,1 +1,24 @@
 @use './functions' as *;
+
+@mixin button {
+    padding-inline: 26px;
+    padding-block: 16px;
+    border-radius: rem(8);
+    text-transform: uppercase;
+    border: none;
+}
+
+@mixin decor-rect {
+    background-color: var(--clr-secondary-1);
+    border-radius: rem(20);
+}
+
+@mixin feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(65);
+    height: rem(65);
+    background-color: var(--clr-primary-1);
+    border-radius: rem(20);
+}

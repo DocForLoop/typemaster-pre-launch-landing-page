@@ -1,1 +1,32 @@
 @use './functions' as *;
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/barlow-v12-latin-500.woff2') format('woff2');
+  }
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../assets/fonts/barlow-v12-latin-900.woff2') format('woff2');
+}
+
+:root {
+    --ff-primary: 'Barlow', Arial, Helvetica, sans-serif;
+    --fs-h1: clamp(3rem, 2.4285rem + 1.1904vw, 3.5rem);
+    --fs-h2: #{rem(32)};
+    --fs-h3: #{rem(24)};
+    --fs-body-primary: #{rem(16)};
+    --fs-body-secondary: clamp(1rem, 0.8571rem + 0.2976vw, 1.125rem);
+    --fw-1: 500;
+    --fw-2: 900;
+    --lh-1: 1;
+    --lh-2: calc(36/32);
+    --lh-3: calc(28/24);
+    --lh-body: calc(26/16);
+}
