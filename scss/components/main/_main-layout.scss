@@ -1,2 +1,72 @@
 @use 'global/functions' as *;
 @use 'global/mixins' as m;
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: rem(64);
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: rem(32);
+    }
+
+    &__cta {
+        display: flex;
+        align-items: center;
+        gap: clamp(2rem, 1.8239rem + 0.7511vi, 2.5rem);
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: rem(75);
+
+    &__images {
+        display: flex;
+        gap: clamp(1.5rem, 1.1421rem + 1.5267vi, 1.875rem);
+    }
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
+        align-items: center;
+    }
+}
+
+.features {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'c1'
+    'c2'
+    'c3'
+    'c4';
+
+    row-gap: clamp(4rem, 3.5229rem + 2.0356vi, 4.5rem);
+    column-gap: rem(69);
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(48);
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(24);
+    }
+}
+
+
+

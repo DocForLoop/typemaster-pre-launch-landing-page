@@ -1,24 +1,24 @@
 @use './functions' as *;
 
-@mixin button {
-    padding-inline: 26px;
-    padding-block: 16px;
+@mixin button($color, $bg-color) {
+    padding-inline: clamp(14px, 2.55px + 3.0534vw, 26px);
+    padding-block: clamp(11px, 6.22px + 1.2722vw, 16px);
     border-radius: rem(8);
     text-transform: uppercase;
     border: none;
+    color: $color;
+    background-color: $bg-color;
 }
 
-@mixin decor-rect {
+@mixin rect-decor {
     background-color: var(--clr-secondary-1);
     border-radius: rem(20);
+    display: none;
 }
 
 @mixin feature-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: rem(65);
     height: rem(65);
     background-color: var(--clr-primary-1);
-    border-radius: rem(20);
+    border-radius: rem(16);
 }

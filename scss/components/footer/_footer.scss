@@ -1,1 +1,5 @@
 @use 'global/functions' as *;
+
+.footer__separator {
+    margin-inline: rem(4);
+}

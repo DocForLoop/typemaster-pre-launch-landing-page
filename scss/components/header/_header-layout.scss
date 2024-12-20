@@ -1,1 +1,11 @@
 @use 'global/functions' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__link {
+        flex: 0 0 auto;
+    }
+}
