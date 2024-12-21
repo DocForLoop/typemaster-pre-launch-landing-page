@@ -1,1 +1,115 @@
 @use 'global/functions' as *;
+
+@media (width > em(767)) {
+    .body-wrapper {
+        padding-block-start: clamp(40px, 22.85px + 2.2321vw, 55px);
+        padding-block-end: 43px;
+        overflow: clip;
+        padding-inline-start: clamp(40px, -102.856px + 18.6011vw, 165px);
+        max-inline-size: rem(1440);
+    }
+
+    .header {
+        margin-block-end: rem(62);
+        padding-inline-start: 0;
+    }
+
+    .product {
+        flex-direction: row;
+        column-gap: clamp(4.3125rem, 0.3125rem + 8.3333vw, 7.8125rem);
+
+        &__info {
+            padding: 0;
+            align-self: center;
+            flex: 1 0 339px;
+        }
+
+        &__title {
+            max-width: 15ch;
+        }
+
+        &__desc {
+            font-size: var(--fs-body-secondary);
+            max-width: 45ch;
+        }
+
+        &__image-wrapper {
+            width: rem(478);
+            height: rem(425);
+            flex: 0 0 auto;
+        }
+        
+        &__image {
+            transform: none;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .gallery {
+        margin-block-end: rem(142);
+        gap: rem(72);
+
+        &__images {
+            transform: none;
+            padding-inline-end: clamp(40px, -57.143px + 12.6488vw, 125px);
+        }
+
+        &__details {
+            flex-direction: row;
+            align-items: stretch;
+            gap: rem(98);
+            text-align: start;
+            padding-inline-end: 40px;
+        }
+
+        &__title {
+            padding-inline: 0;
+        }
+
+        &__desc {
+            align-self: center;
+            padding-inline: 0;
+            margin-block-end: 0;
+        }
+    }
+
+    .features {
+        text-align: left;
+        margin-block-end: rem(142);
+        padding-inline: 0;
+        padding-inline-end: 98px;
+        grid-template-areas: 
+        'c1 c2'
+        'c3 c4';
+
+        &__item {
+            align-items: flex-start;
+        }
+
+        &__details {
+            align-items: flex-start;
+        }
+    }
+}
+
+/* @media (width >= em(1000)) {
+    .body-wrapper {
+        padding-inline-end: clamp(0px, -375px + 37.5vw, 165px);
+    }
+
+    .header {
+        padding-inline-end: 0;
+    }
+    
+    .product {
+        &__info {
+            max-inline-size: 445px;
+        }
+        &__image-wrapper {
+            width: 540px;
+            height: 480px;
+            flex: 0 0 auto;
+        }
+    } 
+} */

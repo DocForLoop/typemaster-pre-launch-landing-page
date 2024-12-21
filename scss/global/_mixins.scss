@@ -8,6 +8,8 @@
     border: none;
     color: $color;
     background-color: $bg-color;
+    max-inline-size: rem(175);
+    flex: 0 0 auto;
 }
 
 @mixin rect-decor {

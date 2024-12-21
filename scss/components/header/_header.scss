@@ -7,8 +7,7 @@
 }
 .header {
     padding-inline: clamp(24px, 8.73px + 4.0712vw, 40px);
-    margin-block-end: 64px;
-
+    margin-block-end: rem(64);
     &__button {
         @include m.button(var(--clr-primary-2), var(--clr-secondary-1));
     }

@@ -4,12 +4,20 @@
 .product {
     margin-block-end: clamp(24px, 8.73px + 4.0712vi, 40px);
     overflow: clip;
+
     &__rect-decor {
         @include m.rect-decor;
     }
 
     &__info {
         padding-inline: clamp(24px, 8.73px + 4.0712vi, 40px);
+    }
+    &__title {
+        max-width: 15ch;
+    }
+
+    &__desc {
+        max-width: 45ch;
     }
     
     &__button {
@@ -19,14 +27,14 @@
     
     &__release-date {
         text-transform: uppercase;
+        flex: 0 0 auto;
     }
     
     &__image {
         width: 100%;
         height: auto;
         transform: translateX(rem(24));
-        border-start-start-radius: rem(20);
-        border-end-start-radius: rem(20);
+        border-radius: rem(20);
     }
 }
 
@@ -52,16 +60,14 @@
             height: 100%;
             background-color: var(--clr-primary-1);
             z-index: 1;
-            border-start-end-radius: rem(20);
-            border-end-end-radius: rem(20);
+            border-radius: rem(20);
             mix-blend-mode:multiply;
             filter: saturate(80%);
         }
     }
 
     &__image-1 {
-        border-start-end-radius: rem(20);
-        border-end-end-radius: rem(20);
+        border-radius: rem(20);
         width: 100%;
         height: auto;
         filter: opacity(0.8);
@@ -80,11 +86,13 @@
 
     &__title {
         padding-inline: 60px;
+        max-width: 18ch;
     }
 
     &__desc {
         padding-inline: 24px;
         margin-block-end: rem(111);
+        max-width: 45ch;
     }
 }
 

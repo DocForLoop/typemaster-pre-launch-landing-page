@@ -112,7 +112,7 @@ a, a:visited, a:active {
 
 .header {
   padding-inline: clamp(24px, 8.73px + 4.0712vw, 40px);
-  margin-block-end: 64px;
+  margin-block-end: 4rem;
 }
 .header__button {
   padding-inline: clamp(14px, 2.55px + 3.0534vw, 26px);
@@ -122,6 +122,8 @@ a, a:visited, a:active {
   border: none;
   color: var(--clr-primary-2);
   background-color: var(--clr-secondary-1);
+  max-inline-size: 10.9375rem;
+  flex: 0 0 auto;
 }
 
 .header {
@@ -145,6 +147,12 @@ a, a:visited, a:active {
 .product__info {
   padding-inline: clamp(24px, 8.73px + 4.0712vi, 40px);
 }
+.product__title {
+  max-width: 15ch;
+}
+.product__desc {
+  max-width: 45ch;
+}
 .product__button {
   padding-inline: clamp(14px, 2.55px + 3.0534vw, 26px);
   padding-block: clamp(11px, 6.22px + 1.2722vw, 16px);
@@ -153,16 +161,18 @@ a, a:visited, a:active {
   border: none;
   color: var(--clr-secondary-2);
   background-color: var(--clr-primary-1);
+  max-inline-size: 10.9375rem;
+  flex: 0 0 auto;
 }
 .product__release-date {
   text-transform: uppercase;
+  flex: 0 0 auto;
 }
 .product__image {
   width: 100%;
   height: auto;
   transform: translateX(1.5rem);
-  border-start-start-radius: 1.25rem;
-  border-end-start-radius: 1.25rem;
+  border-radius: 1.25rem;
 }
 
 .gallery__rect-decor {
@@ -186,14 +196,12 @@ a, a:visited, a:active {
   height: 100%;
   background-color: var(--clr-primary-1);
   z-index: 1;
-  border-start-end-radius: 1.25rem;
-  border-end-end-radius: 1.25rem;
+  border-radius: 1.25rem;
   mix-blend-mode: multiply;
   filter: saturate(80%);
 }
 .gallery__image-1 {
-  border-start-end-radius: 1.25rem;
-  border-end-end-radius: 1.25rem;
+  border-radius: 1.25rem;
   width: 100%;
   height: auto;
   filter: opacity(0.8);
@@ -208,10 +216,12 @@ a, a:visited, a:active {
 }
 .gallery__title {
   padding-inline: 60px;
+  max-width: 18ch;
 }
 .gallery__desc {
   padding-inline: 24px;
   margin-block-end: 6.9375rem;
+  max-width: 45ch;
 }
 
 .features {
@@ -247,7 +257,7 @@ a, a:visited, a:active {
 .product {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  row-gap: 4rem;
 }
 .product__info {
   display: flex;
@@ -309,4 +319,100 @@ a, a:visited, a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (width > 47.9375em) {
+  .body-wrapper {
+    padding-block-start: clamp(40px, 22.85px + 2.2321vw, 55px);
+    padding-block-end: 43px;
+    overflow: clip;
+    padding-inline-start: clamp(40px, -102.856px + 18.6011vw, 165px);
+    max-inline-size: 90rem;
+  }
+  .header {
+    margin-block-end: 3.875rem;
+    padding-inline-start: 0;
+  }
+  .product {
+    flex-direction: row;
+    column-gap: clamp(4.3125rem, 0.3125rem + 8.3333vw, 7.8125rem);
+  }
+  .product__info {
+    padding: 0;
+    align-self: center;
+    flex: 1 0 339px;
+  }
+  .product__title {
+    max-width: 15ch;
+  }
+  .product__desc {
+    font-size: var(--fs-body-secondary);
+    max-width: 45ch;
+  }
+  .product__image-wrapper {
+    width: 29.875rem;
+    height: 26.5625rem;
+    flex: 0 0 auto;
+  }
+  .product__image {
+    transform: none;
+    width: 100%;
+    height: 100%;
+  }
+  .gallery {
+    margin-block-end: 8.875rem;
+    gap: 4.5rem;
+  }
+  .gallery__images {
+    transform: none;
+    padding-inline-end: clamp(40px, -57.143px + 12.6488vw, 125px);
+  }
+  .gallery__details {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 6.125rem;
+    text-align: start;
+    padding-inline-end: 40px;
+  }
+  .gallery__title {
+    padding-inline: 0;
+  }
+  .gallery__desc {
+    align-self: center;
+    padding-inline: 0;
+    margin-block-end: 0;
+  }
+  .features {
+    text-align: left;
+    margin-block-end: 8.875rem;
+    padding-inline: 0;
+    padding-inline-end: 98px;
+    grid-template-areas: "c1 c2" "c3 c4";
+  }
+  .features__item {
+    align-items: flex-start;
+  }
+  .features__details {
+    align-items: flex-start;
+  }
+}
+/* @media (width >= em(1000)) {
+    .body-wrapper {
+        padding-inline-end: clamp(0px, -375px + 37.5vw, 165px);
+    }
+
+    .header {
+        padding-inline-end: 0;
+    }
+
+    .product {
+        &__info {
+            max-inline-size: 445px;
+        }
+        &__image-wrapper {
+            width: 540px;
+            height: 480px;
+            flex: 0 0 auto;
+        }
+    } 
+} *//*# sourceMappingURL=style.css.map */
