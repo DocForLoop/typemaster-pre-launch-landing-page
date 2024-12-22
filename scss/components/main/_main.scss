@@ -2,7 +2,7 @@
 @use 'global/mixins' as m;
 
 .product {
-    margin-block-end: clamp(24px, 8.73px + 4.0712vi, 40px);
+    margin-block-end: clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
     overflow: clip;
 
     &__rect-decor {
@@ -22,7 +22,10 @@
     
     &__button {
         @include m.button(var(--clr-secondary-2), var(--clr-primary-1));
-    
+        
+        &:hover, &:focus {
+            background-color: var(--clr-primary-1-hover);
+        }
     }
     
     &__release-date {
@@ -61,7 +64,7 @@
             background-color: var(--clr-primary-1);
             z-index: 1;
             border-radius: rem(20);
-            mix-blend-mode:multiply;
+            mix-blend-mode: multiply;
             filter: saturate(80%);
         }
     }

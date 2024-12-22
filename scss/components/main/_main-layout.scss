@@ -22,7 +22,7 @@
 .gallery {
     display: flex;
     flex-direction: column;
-    gap: rem(75);
+    row-gap: rem(75);
 
     &__images {
         display: flex;
@@ -45,7 +45,6 @@
     'c2'
     'c3'
     'c4';
-
     row-gap: clamp(4rem, 3.5229rem + 2.0356vi, 4.5rem);
     column-gap: rem(69);
     

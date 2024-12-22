@@ -48,11 +48,11 @@
 
     .gallery {
         margin-block-end: rem(142);
-        gap: rem(72);
+        row-gap: rem(72);
 
         &__images {
             transform: none;
-            padding-inline-end: clamp(40px, -57.143px + 12.6488vw, 125px);
+            padding-inline-end: clamp(40px, -102.345px + 18.5344vw, 83px);
         }
 
         &__details {
@@ -65,8 +65,9 @@
 
         &__title {
             padding-inline: 0;
+            max-width: 15ch;
         }
-
+        
         &__desc {
             align-self: center;
             padding-inline: 0;
@@ -93,9 +94,18 @@
     }
 }
 
-/* @media (width >= em(1000)) {
+@media (width >= em(1000)) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+
     .body-wrapper {
         padding-inline-end: clamp(0px, -375px + 37.5vw, 165px);
+        padding-block-end: 39px;
+    }
+    main {
+        position: relative;
     }
 
     .header {
@@ -103,13 +113,64 @@
     }
     
     .product {
+        margin-block-end: rem(30);
+
         &__info {
             max-inline-size: 445px;
+            align-self: auto;
+            margin-block-start: rem(60);    
         }
+
         &__image-wrapper {
             width: 540px;
             height: 480px;
             flex: 0 0 auto;
         }
-    } 
-} */
+
+        &__rect-decor {
+            display: block;
+            position: absolute;
+            width: clamp(0rem, -36.2215rem + 57.9545vw, 15.9375rem);
+            height: rem(240);
+            right: 0;
+            transform: translateX(rem(285));
+        }
+    }
+
+    .gallery {
+        flex-direction: row;
+        position: relative;
+        column-gap: rem(114);
+        margin-block-end: rem(168);
+
+        &__rect-decor {
+            display: block;
+            position: absolute;
+            width: clamp(0rem, -36.2215rem + 57.9545vw, 15.9375rem);
+            height: rem(240);
+            left: 0;
+            bottom: 0;
+            transform: translateX(rem(-285));
+        }
+
+        &__details {
+            flex-direction: column;
+            gap: rem(27);
+            align-self: center;
+            padding-inline-end: 0;
+        }
+
+        &__images {
+            padding-inline-end: 0;
+            align-items: flex-start;
+        }
+    }
+
+    .features {
+        margin-block-end: rem(128);
+        padding-inline-end: 0;
+        column-gap: rem(30);
+        grid-template-areas: 
+        'c1 c2 c3 c4';
+    }
+}
