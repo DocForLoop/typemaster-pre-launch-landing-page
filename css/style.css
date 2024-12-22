@@ -205,7 +205,6 @@ a, a:visited, a:active {
   z-index: 1;
   border-radius: 1.25rem;
   mix-blend-mode: multiply;
-  filter: saturate(80%);
 }
 .gallery__image-1 {
   border-radius: 1.25rem;
