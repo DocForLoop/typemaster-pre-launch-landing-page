@@ -19,8 +19,8 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/solutions/)
-- [Live Site](https://docforloop.github.io/)
+- [Solution](https://www.frontendmentor.io/solutions/typemaster-landing-page-with-flexbox-and-grid-oSYdP6KUYE)
+- [Live Site](https://docforloop.github.io/typemaster-pre-launch-landing-page/)
 
 ## My process
 

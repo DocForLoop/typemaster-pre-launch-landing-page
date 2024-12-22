@@ -122,7 +122,6 @@ a, a:visited, a:active {
   border: none;
   color: var(--clr-primary-2);
   background-color: var(--clr-secondary-1);
-  max-inline-size: 10.9375rem;
   flex: 0 0 auto;
   transition: color 0.3s, background-color 0.3s;
 }
@@ -166,7 +165,6 @@ a, a:visited, a:active {
   border: none;
   color: var(--clr-secondary-2);
   background-color: var(--clr-primary-1);
-  max-inline-size: 10.9375rem;
   flex: 0 0 auto;
   transition: color 0.3s, background-color 0.3s;
 }
