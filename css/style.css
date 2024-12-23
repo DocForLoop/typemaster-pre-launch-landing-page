@@ -336,7 +336,7 @@ a, a:visited, a:active {
     max-inline-size: 90rem;
   }
   .header {
-    margin-block-end: 3.875rem;
+    margin-block-end: clamp(3.875rem, 2.375rem + 3.125vw, 5.1875rem);
     padding-inline-start: 0;
   }
   .product {
@@ -390,7 +390,7 @@ a, a:visited, a:active {
     margin-block-end: 0;
   }
   .features {
-    text-align: left;
+    text-align: start;
     margin-block-end: 8.875rem;
     padding-inline: 0;
     padding-inline-end: 98px;
