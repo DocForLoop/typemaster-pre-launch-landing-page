@@ -25,6 +25,7 @@
   --lh-2: calc(36/32);
   --lh-3: calc(28/24);
   --lh-body: calc(26/16);
+  --lh-body-secondary: calc(26/18);
 }
 
 :root {
@@ -435,6 +436,7 @@ a, a:visited, a:active {
   }
   .product__desc {
     margin-block-end: 2.5rem;
+    line-height: var(--lh-body-secondary);
   }
   .product__image-wrapper {
     width: 540px;

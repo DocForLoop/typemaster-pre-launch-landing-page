@@ -131,6 +131,7 @@
 
         &__desc {
             margin-block-end: rem(40);
+            line-height: var(--lh-body-secondary);
         }
 
         &__image-wrapper {
