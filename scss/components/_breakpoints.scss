@@ -22,15 +22,18 @@
             padding: 0;
             align-self: center;
             flex: 1 0 339px;
+            gap: 0;
         }
 
         &__title {
             max-width: 15ch;
+            margin-block-end: rem(34);
         }
 
         &__desc {
             font-size: var(--fs-body-secondary);
             max-width: 45ch;
+            margin-block-end: rem(39);
         }
 
         &__image-wrapper {
@@ -118,7 +121,16 @@
         &__info {
             max-inline-size: 445px;
             align-self: auto;
-            margin-block-start: rem(60);    
+            margin-block-start: rem(60);
+            gap: 0;
+        }
+
+        &__title {
+            margin-block-end: rem(24);
+        }
+
+        &__desc {
+            margin-block-end: rem(40);
         }
 
         &__image-wrapper {

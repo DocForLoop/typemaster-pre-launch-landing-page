@@ -347,13 +347,16 @@ a, a:visited, a:active {
     padding: 0;
     align-self: center;
     flex: 1 0 339px;
+    gap: 0;
   }
   .product__title {
     max-width: 15ch;
+    margin-block-end: 2.125rem;
   }
   .product__desc {
     font-size: var(--fs-body-secondary);
     max-width: 45ch;
+    margin-block-end: 2.4375rem;
   }
   .product__image-wrapper {
     width: 29.875rem;
@@ -425,6 +428,13 @@ a, a:visited, a:active {
     max-inline-size: 445px;
     align-self: auto;
     margin-block-start: 3.75rem;
+    gap: 0;
+  }
+  .product__title {
+    margin-block-end: 1.5rem;
+  }
+  .product__desc {
+    margin-block-end: 2.5rem;
   }
   .product__image-wrapper {
     width: 540px;
