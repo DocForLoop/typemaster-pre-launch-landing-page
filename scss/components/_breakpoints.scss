@@ -134,6 +134,10 @@
             line-height: var(--lh-body-secondary);
         }
 
+        &__release-date {
+            flex-shrink: 0;
+        }
+
         &__image-wrapper {
             width: 540px;
             height: 480px;

@@ -174,7 +174,7 @@ a, a:visited, a:active {
 }
 .product__release-date {
   text-transform: uppercase;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
 }
 .product__image {
   width: 100%;
@@ -437,6 +437,9 @@ a, a:visited, a:active {
   .product__desc {
     margin-block-end: 2.5rem;
     line-height: var(--lh-body-secondary);
+  }
+  .product__release-date {
+    flex-shrink: 0;
   }
   .product__image-wrapper {
     width: 540px;
